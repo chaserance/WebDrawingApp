@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<!-- Chushu Liu
+     COSC 231-0
+     PP#4       -->
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>PP4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="model.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <header>
+    <p>Drawing App</p>
+  </header>
+
+  <div id="box">
+    <div id="tool">
+
+        <div class="range-slider">
+          <span class="description">Brush width</span><br />
+          <input type='range' id="size" value="5" min="1" max="50">
+          <span id="view">0</span><br />  
+        </div><hr />
+
+        <div class="BrushShape">
+          <span class="description">Brush shape</span><br />
+          <button id="cir" class="shape active">Circle</button>
+          <button id="sq" class="shape">Square</button>
+          <button id="di" class="shape">Diagonal</button><hr />
+          <span class="description">Eraser</span>
+          <button class="eraser">
+            <img id="er" alt="erz" src="eraser.png" />
+          </button>
+          <button id="clearAll">Clear All</button><hr />
+        </div>
+
+        <div id="penColor">
+            <span class="description">Pen Color</span><br />
+        </div><hr />
+
+        <div id="backgroundColor">
+            <span class="description">Background Color</span><br />
+        </div>
+    </div>
+
+    <canvas id="drawingArea"  width="500" height="500"></canvas>
+
+  </div>
+
+</body>
+</html>

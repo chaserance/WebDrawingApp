@@ -1,0 +1,155 @@
+﻿  	/*  Chushu Liu
+    COSC 231-0
+    PP#4       */
+    body {
+  		text-align: center;
+  	}
+  	
+  	header {
+  		 width: 70%;
+  		 padding: 20px;
+  		 margin: 0 auto;
+  		 background-color: black;
+  	}
+  	
+  	header p {
+  		font-size: 30px;
+  		color: orange;
+  		text-align: center;
+  	}
+  	
+    #box {
+        z-index:1;
+        position: relative;
+        margin: 30px auto;
+  		border: 15px groove #000000;;
+        width:700px;
+        height:500px;
+        background-color:white;
+    }
+
+    #tool {
+        z-index: 15;
+        position: absolute;
+        left:0;
+        width:200px;
+        height:500px;
+        border-right:3px groove #DCDCDC;
+        background-color:#DCDCDC;
+    }
+
+  	canvas#drawingArea {
+        z-index:10;
+		cursor: url('cursor.png'), auto;
+        position: absolute;
+        right:0;
+        bottom:0;
+  		
+  	}
+
+    .shape {
+        background-color: #191970;
+        color: white;
+    }
+
+    .shape.active {
+        background-color: #FCFBB0;
+        color: black;
+    }
+    
+    #er {
+        width:18px;
+        height:18px;
+    }
+
+    .eraser {
+
+    }
+
+    .description {
+        font-weight:bold;
+    }
+
+    hr {
+        margin: 5px auto;
+	    border: 0;
+	    border-bottom: 2px solid #708090;
+    }
+
+    .pickerP {
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+        display: inline-block;
+        background-color: black;
+        box-sizing: border-box;
+        margin: 1px;
+    }
+
+    .pickerP.chooseP {
+        border: 3px solid cyan;
+    }
+
+    .pickerBG {
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+        display: inline-block;
+        background-color: black;
+        box-sizing: border-box;
+        margin: 1px;
+    }
+
+    .pickerBG.chooseBG {
+        border: 3px solid cyan;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 95%;
+        height: 20px;
+        margin: 0;
+        border: none;
+        border-radius: 15px;
+        background: #87CEFA;
+        outline: none; 
+    }
+
+    input[type="range"]::-moz-range-track {
+        border: inherit;
+        background: transparent;
+    }
+
+    input[type="range"]::-ms-track {
+        border: inherit;
+        background: transparent;
+    }
+
+    input[type="range"]::-ms-tooltip {
+        display: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 40px;
+        height: 18px;
+        border: none;
+        border-radius: 12px;
+        background-image: linear-gradient(to bottom, white 0, grey 100%);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        width: 40px;
+        height: 18px;
+        border: none;
+        border-radius: 12px;
+        background-image: linear-gradient(to bottom, white 0, grey 100%);
+    }
+
+    input[type="range"]::-ms-thumb {
+        width: 40px;
+        height: 18px;
+        border-radius: 12px;
+        border: 0;
+        background-image: linear-gradient(to bottom, white 0, grey 100%);
+    }
